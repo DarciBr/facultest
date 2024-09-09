@@ -1,0 +1,181 @@
+body,
+html {
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: var(--plano-dark);
+    color: var(--letra-dark);
+    position: relative;
+    z-index: 1;
+    /* Garante que o conteúdo acima da imagem fique visível */
+
+}
+
+head {
+    padding: 5px;
+    margin: 5px;
+}
+.lock{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--plano-dark);
+}
+.servicos{
+    text-decoration: none;
+}
+.servicos a {
+    font-size: 25px;
+}
+.cabeca {
+    display: flex;
+    list-style-type: none;
+    border-style: outset;
+    border-radius: 1px;
+    top: 0;
+    z-index: 1000;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: -40px;
+    border-radius: 50px;
+
+}
+
+.whats {
+    text-align: center;
+    margin-top: 40PX;
+}
+
+a {
+    text-decoration: none;
+    /* Remove o sublinhado */
+    color: inherit;
+    /* Usa a cor do texto do elemento pai */
+    font-size: 60px;
+    /* Ajuste o tamanho da fonte conforme necessário */
+    padding: 0;
+    /* Remove o padding */
+    border: none;
+    /* Remove bordas */
+    background: none;
+    /* Remove o fundo */
+    display: inline;
+    /* Garante que o link se comporte como texto */
+    display: center;
+}
+
+.inicio,
+.sobre,
+.servicos,
+.depoimentos,
+.fotos,
+.horarios,
+.contatos {
+    margin-top: -15px;
+    margin-bottom: -15px;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0;
+    /* Remover padding para parecer mais com texto */
+    cursor: pointer;
+    /* Cursor de ponteiro para indicar que é clicável */
+    background: none;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+:root {
+    --plano-dark: #16423C;
+    /* Cor de fundo escuro */
+    --plano2-dark: #6A9C89;
+    /* Outra cor escura */
+    --letra-dark: #E9EFEC;
+    /* Cor de texto para o tema escuro */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sobre1 h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.sobre1 h2 {
+    font-size: 25px;
+}
+
+.sobre1 {
+    text-align: center;
+}
+
+.sobre1 li {
+    font-size: 20px;
+}
+
+/*
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+}
+*/
+
+#produtos {
+    color: var(--letra-dark);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 3 colunas de tamanhos iguais */
+    gap: 10px;
+    /* Espaçamento entre os itens */
+    text-align: center;
+}
+
+#produtos img {
+    padding: 0;
+    width: 100%;
+    /* Faz a imagem preencher o espaço do contêiner */
+    height: 100%;
+    /* Faz a altura da imagem preencher o contêiner */
+    object-fit: cover;
+    /* Corta a imagem para cobrir o contêiner, sem distorção */
+    display: block;
+    /* Remove o espaço extra embaixo das imagens */
+}
+.comentarios{
+    text-align: center;
+}
+.comen{
+    padding: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.comen, h2{ 
+    font-size: 20px;
+}
+.comen, h2{ 
+    font-size: 25px;
+}
